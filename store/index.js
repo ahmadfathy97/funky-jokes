@@ -18,7 +18,7 @@ const actions = {
 };
 
 const mutations = {
-  addJoke: (state, joke) => state = state.favjokes.push(joke),
+  addJoke: (state, joke) => state.favjokes = [joke, ...state.favjokes],
   removeJoke: (state, id) => state.favjokes = state.favjokes.filter( joke => joke.id != id)
 };
 export default {
