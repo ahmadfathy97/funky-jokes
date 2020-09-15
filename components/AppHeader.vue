@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <h1 class="title">Jokes</h1>
+    <h1 class="title">Dad Jokes</h1>
     <ul>
       <li>
         <nuxt-link to="/">Home</nuxt-link>
@@ -29,6 +29,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px dotted #ccc;
@@ -56,5 +57,10 @@ export default {
 .header a.nuxt-link-exact-active{
   background: #222;
   color: #fff;
+}
+@media(max-width: 600px){
+  .header{
+    justify-content: center;
+  }
 }
 </style>

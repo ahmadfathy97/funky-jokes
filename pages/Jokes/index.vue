@@ -78,7 +78,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Best place to find funky jokes"
+          content: "Best place to find dad jokes"
         }
       ]
     };

@@ -4,8 +4,8 @@
       <p>{{ joke.joke }}</p>
     </nuxt-link>
     <div class="btns">
-      <button @click="removeFromFav(joke.id)" v-if="fav">Remove from fav</button>
-      <button @click="addToFav(joke)" v-if="!fav">Add to fav</button>
+      <button @click="removeFromFav(joke.id)" v-if="fav">Remove</button>
+      <button @click="addToFav(joke)" v-if="!fav">fav</button>
     </div>
     <div class="clear-fix"></div>
   </div>
@@ -38,7 +38,7 @@ a:hover{
 }
 .fav{
   border-color: #f00;
-  background: rgba(255,0,0,.1);
+  background: #bfd6e4;
 }
 .btns{
   float: right;
@@ -47,8 +47,8 @@ button{
   padding: 2px 10px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #f66;
-  background: #f66;
+  border: 1px solid #bfd6e4;
+  background: #526488;
   font-size: 18px;
   color: #fff;
   text-shadow: 0 0 4px solid #222
