@@ -1,7 +1,9 @@
 <template>
   <div>
     <nuxt-link to="/jokes" class="backBtn">◀ Back</nuxt-link>
-    <h2>{{ joke }}</h2>
+    <div class="joke-container">
+      <h2>{{ joke }}</h2>
+    </div>
   </div>
 </template>
 
@@ -56,5 +58,10 @@ export default {
 }
 .backBtn:hover{
   box-shadow: none
+}
+.joke-container{
+  min-height: 70vh;
+  background: url('../../../../assets/old-man.png') no-repeat 90% 90%;
+  background-size: 180px 180px;
 }
 </style>

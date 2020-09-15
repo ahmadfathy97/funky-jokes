@@ -1,4 +1,4 @@
-# Funky Jokes
+# [Funky Jokes](https://funky-dad-jokes.netlify.app)
 > Nuxt.js app
 ## Build Setup
 
